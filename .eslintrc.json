@@ -1,0 +1,48 @@
+{
+  "extends": ["eslint:recommended", "google"],
+
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+
+  "plugins": ["async-await"],
+
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+
+  "rules": {
+    "block-scoped-var": "error",
+    "brace-style": ["error", "1tbs"],
+    "consistent-return": "error",
+    "curly": ["error", "all"],
+    "comma-dangle": ["error", "always-multiline"],
+    "comma-spacing": ["error", {"before": false, "after": true}],
+    "default-case": "error",
+    "dot-notation": "error",
+    "eqeqeq": "error",
+    "guard-for-in": "off",
+    "no-console": "off",
+    "no-debugger": "off",
+    "no-extend-native": "off",
+    "no-extra-parens": "error",
+    "no-irregular-whitespace": "error",
+    "no-multiple-empty-lines": ["error", {
+      "max": 1,
+      "maxEOF": 0,
+      "maxBOF": 0
+    }],
+    "radix": "error",
+    "require-jsdoc": "off",
+    "space-before-function-paren": ["error", "always"],
+    "space-infix-ops": "error",
+    "quotes": ["error", "single", {"avoidEscape": true}]
+  }
+}
